@@ -14,10 +14,14 @@ namespace Calc
         }
         void Add()
         {
+            Console.WriteLine("Enter 2 numbers");
             int a, b;
             if(int.TryParse(Console.ReadLine(),out a) && int.TryParse(Console.ReadLine(),out b))
             {
+                if (a == 0 || b == 0)
+                    Add();
                 Console.WriteLine(a + b);
+
             }
             else
             {
