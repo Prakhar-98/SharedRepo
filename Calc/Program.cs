@@ -30,10 +30,14 @@ namespace Calc
         }
         void Subtract()
         {
+            Console.WriteLine("Enter 2 numbers");
             int a, b;
             if (int.TryParse(Console.ReadLine(), out a) && int.TryParse(Console.ReadLine(), out b))
             {
+                if (a == 0 || b == 0)
+                    Subtract();
                 Console.WriteLine(a - b);
+
             }
             else
             {
