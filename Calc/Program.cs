@@ -10,6 +10,19 @@ namespace Calc
     {
         static void Main(string[] args)
         {
+
+        }
+        void Add()
+        {
+            int a, b;
+            if(int.TryParse(Console.ReadLine(),out a) && int.TryParse(Console.ReadLine(),out b))
+            {
+                Console.WriteLine(a + b);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input");
+            }
         }
     }
 }
