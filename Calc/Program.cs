@@ -24,5 +24,17 @@ namespace Calc
                 Console.WriteLine("Invalid Input");
             }
         }
+        void Subtract()
+        {
+            int a, b;
+            if (int.TryParse(Console.ReadLine(), out a) && int.TryParse(Console.ReadLine(), out b))
+            {
+                Console.WriteLine(a - b);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input");
+            }
+        }
     }
 }
