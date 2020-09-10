@@ -10,7 +10,8 @@ namespace Calc
     {
         static void Main(string[] args)
         {
-
+            new Program().GetNumbers();
+            Console.ReadKey();
         }
         void Add()
         {
@@ -42,6 +43,17 @@ namespace Calc
             else
             {
                 Console.WriteLine("Invalid Input");
+            }
+        }
+        void GetNumbers()
+        {
+            int iNum1 = 0, iNum2 = 0;
+            iNum1 = int.MaxValue;
+            Console.WriteLine("Num 1" + iNum1);
+            checked
+            {
+                iNum1++;
+                Console.WriteLine("New Value" + iNum1);
             }
         }
     }
